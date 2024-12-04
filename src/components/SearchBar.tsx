@@ -19,8 +19,6 @@ export const SearchBar = ({ searchFn }: Props) => {
   });
 
   const onEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    console.log(e.key);
-
     if (e.key === "Enter") {
       mutateAsync(e.currentTarget.value);
       setSearch(e.currentTarget.value);
